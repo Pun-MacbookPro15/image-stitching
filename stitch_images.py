@@ -96,8 +96,8 @@ def equalize_histogram_color(img):
 def main():
 	
 	# Get input set of images
-	img1 = cv2.imread("/root/image-stitching/images/"+sys.argv[1])
-	img2 = cv2.imread("/root/image-stitching/images/"+sys.argv[2])
+	img1 = cv2.imread("images/"+sys.argv[1])
+	img2 = cv2.imread("images/"+sys.argv[2])
 
 	# Equalize histogram
 	img1 = equalize_histogram_color(img1)
@@ -116,7 +116,7 @@ def main():
 	# Write the result to the same directory
 	#result_image_name = 'results/result_'+sys.argv[1]
 	#result_image_name = 'results/result_'+sys.argv[3]
-	result_image_name = '/root/image-stitching/images/'+sys.argv[3]
+	result_image_name = 'images/'+sys.argv[3]
 	cv2.imwrite(result_image_name, result_image)
 
 	# Show the resulting image
