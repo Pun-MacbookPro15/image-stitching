@@ -18,7 +18,7 @@ crop_img = img[y1:y2, x1:x2]
 #cv2.imshow("cropped", crop_img)
 result_image_name = 'images/'+sys.argv[2]
 cv2.imwrite(result_image_name, crop_img)
-cv2.waitKey(0)
+#cv2.waitKey(0)
 
 
 #using command
